@@ -14,8 +14,13 @@ class CustomTabBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       child: TabBar(
-        labelColor: Colors.black,
-        labelPadding: const EdgeInsets.only(left: 20, right: 20),
+        automaticIndicatorColorAdjustment: false,
+        indicatorPadding: const EdgeInsets.only(left: 20, right: 20),
+        physics: const BouncingScrollPhysics(),
+        labelStyle: const TextStyle(
+            fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black),
+        unselectedLabelStyle: const TextStyle(fontSize: 14, color: Colors.grey),
+        labelPadding: const EdgeInsets.only(right: 20),
         unselectedLabelColor: Colors.grey,
         indicatorSize: TabBarIndicatorSize.label,
         indicator: const CircleTabIndicator(

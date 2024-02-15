@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/features/home/ui/views/main_view.dart';
+import 'package:travel_app/features/onboarding/ui/views/onboarding_view.dart';
 
 void main() {
   runApp(const TravelApp());
@@ -13,7 +14,7 @@ class TravelApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Travel App',
-      home: MainView(),
+      home: OnboardingView(),
     );
   }
 }

@@ -65,7 +65,7 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
           children: [
             const HomeViewHeader(),
             const SizedBox(
-              height: 30,
+              height: 35,
             ),
             AppLargeText(text: "Discover"),
             const SizedBox(
@@ -92,7 +92,7 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
             const SizedBox(
               height: 20,
             ),
-            TravelsListView(travels: travels)
+            TravelsListView(travels: travels),
           ],
         ),
       ),
